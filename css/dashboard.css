@@ -1,0 +1,11 @@
+.notification-panel{
+    width: 300px !important;
+    height: auto;
+    top: 60px;
+    right: 5px !important;
+    z-index: 99;
+    display: none;
+}
+.cursor-pointer{
+    cursor: pointer;
+}

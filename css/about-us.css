@@ -1,0 +1,64 @@
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.hover:hover{
+    background: #f4f4f4;
+    color: rgba(192, 8, 143, 0.861) !important;
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.subscribe{
+    overflow: hidden;
+    padding: 72px 15px;
+    position: relative;
+}
+.form-msg{
+    opacity: 75;
+    float: left;
+    color: #fff;
+}
+.subscribe form{
+    margin-bottom: 25px;
+}
+
+.form-input-wrapper{
+    margin-bottom: o.6em;
+}
+input{
+   
+    padding: 20px 40px;
+    border-color: transparent;
+    transition: all .3s ease;
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    background-color: #f7f9f9;
+    width: 100%;
+}
+input:focus{
+    border: none;
+}
+input:active{
+    border: none;
+}
+
+.images-block img.mail{
+    position: absolute;
+    left: 0;
+    bottom:0;
+
+}
+
+
+
+@media  (min-width:1200px) {
+    .col-lg-offset-5{
+        margin-left: 44.44%;
+    }
+}

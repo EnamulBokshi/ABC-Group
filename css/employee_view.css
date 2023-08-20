@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.bold-hover:hover{
+    color: rgba(3, 107, 77, 0.797);
+}
+aside{
+    display: none;
+    width: 300px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    z-index: 99999;
+}
+aside>div.sidebar-header{
+    cursor: pointer; 
+}
+aside>div.sidebar-header span:hover{
+    color: red;
+}
+aside>#SectionWrapper a:hover:not(.active){
+    background-color: #f4f4f4;
+    color: black !important;
+}
+.SectionA{
+    display: block;
+}
+.SectionB{
+    display: none;
+}
+.SectionC{
+    display: none;
+}
+.SectionD{
+    display: none;
+}

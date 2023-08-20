@@ -1,0 +1,21 @@
+
+Name: Ancients Builders General Construction
+service:
+1.Manpower supply 
+2.Contracting service
+3.Heavy equipment frental
+4.Metal Trading
+5.Industrial equipment supply
+
+
+class dashboard{
+    1: View Employee
+    2: Attendence Sheet
+    3: PayRoll
+    4: Add Employee
+    5: Company Document
+    6: Account 
+    7: Email
+    8: Salary Sheet
+    9: Car Information
+}

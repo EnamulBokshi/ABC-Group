@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.hover:hover{
+    background-color: #2070c0ac;
+    color: rgb(255, 255, 255);
+    transform: translate();
+    transition: 0.2s;
+    border-radius: 5px;
+}
+div.hide{
+    display: none !important;
+}
+nav div a{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}

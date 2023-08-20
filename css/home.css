@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.hover:hover{
+    background: #f4f4f4;
+    color: rgba(192, 8, 143, 0.861) !important;
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.form-wrapper{
+    width: 500px;
+    animation: animationZome;
+}
+@keyframes animationZome {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+.z-index{
+    z-index: 999;
+}
+.close:hover{
+    color: rgba(138, 7, 7, 0.619) !important;
+}
+
+.slider-wrapper{
+    margin-top: 10px;
+    width: 100%;
+    height: 520px;
+    background: red;
+    color: white;
+}
+.footer-left>.list-gorup li>a:hover{
+    color: rgb(138, 138, 5);
+    cursor: pointer;
+}
