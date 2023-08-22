@@ -2,15 +2,39 @@
 .cursor-pointer{
     cursor: pointer;
 }
+.overflow-scroll{
+    overflow: scroll !important;
+}
+.overflow-y-scroll{
+    overflow-y: scroll !important;
+}
+.overflow-y-auto{
+    overflow-y: auto !important;
+}
+.overflow-auto{
+    overflow: auto !important;
+}
 .hover:hover{
     background: #f4f4f4;
-    color: rgba(192, 8, 143, 0.861) !important;
+    color: rgba(0, 195, 255, 0.774) !important;
     cursor: pointer;
     
 }
-
+.activated{
+    border-left: 2px solid rgba(0, 195, 255, 0.774);
+    color: rgba(0, 195, 255, 0.774) !important;
+    border-bottom: 1px dashed #f4f4f4;
+    background-color: #f4f4f4;
+}
 a{
     text-decoration: none;
+}
+.banner{
+    background-image: url(../img/man_power/mining-excavator-1736289_1920.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .subscribe{
     overflow: hidden;
