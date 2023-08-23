@@ -35,10 +35,11 @@ a{
 .about-sec{
     filter: brightness( 111% ) contrast( 104% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
     background-color: #1B1B1B;
-    background-image: url("https://pattern.com/wp-content/uploads/2022/11/how-it-works-grid.svg");
-    background-position: center center;
+    background-image: url("../img/man_power/construction-279012_1280.jpg");
+    background-position:  center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     opacity: 1;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }

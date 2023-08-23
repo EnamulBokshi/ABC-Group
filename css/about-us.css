@@ -30,11 +30,15 @@ a{
     text-decoration: none;
 }
 .banner{
+   
     background-image: url(../img/man_power/mining-excavator-1736289_1920.jpg);
+    filter: brightness( 111% ) contrast( 104% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
     background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 .subscribe{
     overflow: hidden;
