@@ -101,7 +101,7 @@
 <section class=" container-fluid bg-light py-5" id="service">
   <div class=" ">
       <p class="display-3 text-center text-capitalize mb-5">our services</p>
-      <div class="row gx-5 gy-5">
+      <div class="row gy-5">
         <div class="col-4 d-flex flex-column align-items-center" id="manPower">        
             <a href="manpower.html"><img src="img/home_page/manpower2.jpg" alt="" style="height: 70px; width: 70px;"></a>
             <a href="manpower.html" class="nav-link text-sm-center text-center">Manpower Services</a>
@@ -134,9 +134,9 @@
   </div>
 </section>
 
-  <section class="container-fluid bg-light py-5" id="mission">
+  <section class="container-fluid bg-light py-5 " id="mission">
     <div class="row">
-        <div class="col-6 ">
+        <div class="col-md-6 col-sm-12">
             <p class="display-3 text-capitalize text-center " style="letter-spacing: 1rem;">Our Mission</p>
             <div>
               <li class="list-group-item-succ mb-2 list-unstyled d-flex" style="border-radius: 5px;">
@@ -158,7 +158,7 @@
               </li>
             </div>
         </div>
-        <div class="col-6 ">
+        <div class="col-sm-12 col-md-6 mt-sm-5 mt-md-0">
           <p class="display-3 text-capitalize text-center" style="letter-spacing: 1rem;">Our vision</p>
           <div class="text-center mx-4">
             <p>
@@ -172,50 +172,61 @@
     </div>
   
   </section>
-  <section class="container m-5 " id="about">
-      <p class="display-3 text-center">About Us</p>
-    
-    <div class="text-center" style="margin-left: 10rem; margin-right: 10rem;">
-      <p>
-        •	A.B.C Group is industrial and commercial Engineering and Contracting firm Founded in 2006. Dammam based A.B.C Group Construction Corporation provides general contracting, construction management and pre-engineered metal building services to a broad range of commercial and industrial clients throughout the Kingdom of Saudi Arabia. Anchored by loyal employees who are dedicated to providing superior service, and grounded in the philosophy that honesty and integrity are as important as the bottom line, A.B.C Group Construction has enjoyed an impeccable reputation for over 15 years. We have never failed to complete a project and have never had a bond claim. Schedules and budgets are meant to be kept, and we strive every day to do so
-      </p>
-      <p></p>
-    </div>
-    
+  
+  <section class="container-fluid about-sec">
+      <div class="d-flex justify-content-center align-items-center py-5">
+        <div class="p-4 rounded bg-dark shadow text-light d-flex flex-column justify-content-center align-items-center" style="width: 700px;">
+          <h2 class="text-info fs-1 mt-3">About Us</h2>
+          <h1 class="display-2 text-primary my-4">The A.B.C group</h1>
+          <p>Brands experience measurable and repeatable growth when they apply Pattern’s ecommerce
+            acceleration platform’s technology and services to their ecommerce business and strategy.</p>
+            <div class="mt-3">
+              <a class="btn btn-outline-info text-light me-3" href="aboutus.html">Abouts us <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></a>
+              <a class="btn btn-outline-warning" href="contactus.html">Contactus us <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></a>
+            </div>
+        </div>
+      </div>
   </section>
 
-  <section class="container mt-3" id="contact">
-    <div class="d-flex justify-content-center ">
-      <p class="display-3">Contact-US</p>
+  <div class="msg-warper container-fluid  d-flex align-items-center justify-content-center">
+    <div class="msg-box" >
+        <form action="#">
+          <h2 class="display-4 text-warning text-center mb-4">Contact Us</h2>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="first name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="last name">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <input type="email" class="form-control" placeholder="someone@example.com" autocomplete="off">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <select class="form-control">
+                <option value="Suggetion"> Suggetion</option>
+                <option value="Complain">Complain</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>                
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <textarea class="form-control" placeholder="Leave your message herer.." style="height: 100px;" aria-setsize="off"></textarea>
+            </div>
+          </div>              
+            <div class="d-flex justify-content-center mt-3">
+              <input type="submit" value="Submit" class="btn btn-outline-warning w-100">
+            </div>
+        </form>
     </div>
-    <div class="mt-2">
-      <form action="#" class="form">
-        <div class="form-group mb-2">
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" class="form-control" placeholder="First Name">
-        </div>
-        <div class="form-group mb-2">
-          <label for="lastName">Last Name</label>
-          <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last Name">
-        </div>
-        <div class="form-group mb-2">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="form-control" placeholder="someone@example.com">
-        </div>
-        <div class="form-floating mb-2">
-         
-          <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone Number">
-          <label for="phone">Phone Number</label>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="5" placeholder="Leave your message here..." class="form-control"></textarea>
+  </div>
 
-        </div>
-        <input type="submit" class="btn btn-danger mt-2 mb-5 form-control" value="Submit">
-      </form>
-    </div>
-  </section>
+ 
 
  <footer class="">
         <div class="bg-secondary p-5 d-flex justify-content-between text-light">
