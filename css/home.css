@@ -34,7 +34,7 @@ a{
 
 .about-sec{
     filter: brightness( 111% ) contrast( 104% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
-    background-color: #1B1B1B;
+    background-color: #1b1b1b09;
     background-image: url("../img/man_power/construction-279012_1280.jpg");
     background-position:  center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ a{
     background-size: cover;
 }
 .msg-warper>.msg-box{
-    background-color: rgba(73, 67, 60, 0.6);
+    background-color: rgba(73, 67, 60, 0.534);
     padding: 32px;
 }
 
