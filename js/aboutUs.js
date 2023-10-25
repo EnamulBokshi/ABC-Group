@@ -6,7 +6,6 @@ const ab005 = document.querySelector("#ab005");
 const ab006 = document.querySelector("#ab006");
 const ab007 = document.querySelector("#ab007");
 const ab008 = document.querySelector("#ab008");
-
 function viewdata(e,id){
     const lists = document.querySelectorAll("#aboutParent li");
     for(let li of lists){

@@ -20,3 +20,24 @@ nav div a{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.curd-display{
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    z-index: 999;
+    width: 150px;
+}
+.curd-display>li:hover{
+    cursor: pointer;
+}
+.curd-display li:nth-of-type(1):hover{
+    background: #02eb7e !important;
+    color: #fff;
+}.curd-display li:nth-of-type(2):hover{
+    background: #02eb7e !important;
+    color: #fff;
+}
+.curd-display li:nth-of-type(4):hover{
+    background: #02eb7e !important;
+    color: #fff;
+}

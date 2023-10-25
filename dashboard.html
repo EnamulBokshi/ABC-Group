@@ -15,23 +15,40 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <header class="shadow">
+    <header class="shadow fixed-top">
         <nav class="navbar navbar-expand-sm bg-secondary ">
-            <div class="container-fluid text-light">
+            <div class="container-fluid text-light" id="navWrapper">
                 <a href="#" class="navbar-brand text-light"><i class="fa-solid fa-grip me-2 text-white"></i>Dasboard</a>
-                    <div  class="d-flex">  
-                      <span class="cursor-pointer notification-btn">Notification</span><span class="badge bg-secondary me-2 text-warning">4</span>
-                        <p class="mb-0"> <span class="fa-solid fa-circle-user fs-5 me-1 text-dark"></span>User Name</p>
+                    <div  class="d-flex align-items-center justify-content-between gap-2">  
+                      <div>
+                        <span class="cursor-pointer notification-btn">Notification</span><span class="badge bg-warning text-light ms-1 ">4</span>
+                      </div>                        
+                        <div>
+                            <p class="mb-0 cursor-pointer" id="ds-user"> <span class="fa-solid fa-circle-user  me-1 text-dark"></span>User Name</p>
+                        </div>
                     </div>
             </div>
         </nav>
-    
     </header>
-    <aside class="position-absolute end-0 notification-panel bg-light shadow">
-        <div class="p-2 border d-flex flex-column justify-content-between">
-            
-            <div class="panel-header card-header d-flex align-items-center">
-                <p>Notification Center</p>
+    <aside class="position-absolute end-0 p-2 d-none mt-1" id="ds-display-account">
+        <div class="card">
+            <div class="card-header">
+                <p class="mb-0" id="ds-uder-show-head"></p>
+            </div>
+            <div class="card-body">
+                <p>
+                    Some other actions
+                </p>
+            </div>
+            <div class="card-footer">
+               <button class="btn btn-danger" id="acBxCls"> Close</button>
+            </div>
+        </div>
+    </aside>
+    <aside class="position-absolute end-0 notification-panel bg-light shadow d-none mt-1">            
+        <div class="card">
+            <div class="card-header">
+                <p class="mb-0">Notification Center</p>
             </div>
             <div class="panel-body card-body ">
                 <p class="bg-warning p-1 mb-1 cursor-pointer">Notification panel</p>
@@ -39,14 +56,18 @@
                 <p class="p-1 bg-light mb-1 cursor-pointer">Notification panel</p>
             </div>
             <div class="card-footer">
-
                 <a href="#" class="btn btn-close"></a>
             </div>
-
+        </div>           
+    </aside>
+    <aside class="position-fixed vh-100 bg-dark text-light top-0 px-2 d-n" id="dashBar" style="width: 300px;padding-top: 70px;">
+        <div class="d-flex flex-column flex-end text-light vh-100" style="height: 100%;">
+            <div class="">Head</div>
+            <div>Body</div>
+            <div class="">Footer</div>
         </div>
     </aside>
-
-    <div class="container shadow" id="dashboard">
+    <div class="container shadow " id="dashboard" style="margin-top: 70px;">
         <div class="my-3 py-2">
            <form action="#" class="d-flex p-0">
             <span class="pe-2 border-end fa-solid fa-magnifying-glass text-center display-6 text-secondary"></span>
@@ -54,13 +75,11 @@
            </form> 
         </div>
     </div>
-
-
 <div class="container py-3 mt-4 bg-white shadow">
     <div class="row">
         <div class="col-3 d-flex flex-column align-items-center">
             <span class="fa-solid fa-users fs-1"></span>
-            <a href="#" class="nav-link">View Employee</a>
+            <a href="view_emplyee.html" class="nav-link">View Employee</a>
         </div>
         <div class="col-3  d-flex flex-column align-items-center ">
             <span class="fa-regular fa-calendar fs-1"></span>
@@ -72,13 +91,13 @@
         </div>
         <div class="col-3 d-flex flex-column align-items-center">
             <span class="fa-solid fa-plus fs-1"></span>
-            <a href="#" class="nav-link">Add Employee</a>
+            <a href="addEmployee.html" class="nav-link">Add Employee</a>
         </div>
     </div>
     <div class="row mt-3">    
         <div class="col-3 d-flex flex-column align-items-center">
             <i class="fa-solid fa-file-pdf fs-1"></i>
-            <a href="#" class="nav-link">Company Document</a>
+            <a href="#" class="nav-link">Company DocumentS</a>
         </div>
         <div class="col-3 d-flex flex-column align-items-center">
             <i class="fa-solid fa-circle-user fs-1"></i>
@@ -91,8 +110,7 @@
         <div class="col-3 d-flex flex-column align-items-center">
             <i class="fa-solid fa-file-invoice-dollar fs-1 text-warning"></i>
             <a href="#" class="nav-link">Salary Sheet</a>
-        </div>
-        
+        </div>        
     </div>
     <div class="row mt-3">
         <div class="col-3 d-flex flex-column align-items-center">
@@ -105,6 +123,5 @@
      <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
      <script src="js/dashboard.js"></script>
-
 </body>
 </html>

@@ -82,6 +82,9 @@ const doc = document.querySelector('#document')
 const leaves = document.querySelector('#leaves')
 const transactions = document.querySelector('#transactions')
 const attendance = document.querySelector('#AT');
+const editIcon = document.querySelector("#edit-icon");
+const crudBox = document.querySelector("#curd-edit");
+const crudCancel = document.querySelector("#crudCancel");
 function view_data(e,id){
     const links = document.querySelectorAll('nav div a');
     
@@ -99,4 +102,17 @@ function view_data(e,id){
 
     const targetElement = document.getElementById(id);
     targetElement.classList.remove('d-none');
+}
+
+editIcon.addEventListener('click',() => {
+    crudBox.className = crudBox.className.replace("d-none","");
+})
+crudCancel.addEventListener("click", () =>{
+    crudBox.classList += ' d-none';
+})
+window.onclick =(e) =>{
+    const pf001 = document.getElementById("pf001")
+  if(e.target == pf001){
+    crudBox.classList += ' d-none';
+  }
 }

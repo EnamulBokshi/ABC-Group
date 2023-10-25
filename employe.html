@@ -80,25 +80,34 @@
             </div>
         </div>
     </aside>
-
-
+    <div class="card"></div>
     <div class="right overflow-auto" style="margin-left:300px">
         <header class="bg-light px-4">
-            <div class="pt-4 d-flex ">
+            <div class="pt-4 d-flex " id="pf001">
                 <div class="mt-4 me-2">
                     <img src="img/avatar_hat.jpg" class="rounded-circle" style="width: 70px; height: 70px;">
                 </div>
-                <div class="">
-                    <h2 class="fst-italic">Sarah Al-Juhany</h2>
-                    <p class="fw-bold fst-italic">455320</p>
-                    <p>Product Manager</p>
-                    <p>Working Experience: </p>
-                    <p>Last active time is: </p>
+                <div class="d-flex justify-content-between position-relative">
+                    <div>
+                        <h2 class="fst-italic">Sarah Al-Juhany</h2>
+                        <p class="fw-bold fst-italic">455320</p>
+                        <p>Product Manager</p>
+                        <p>Working Experience: </p>
+                        <p>Last active time is: </p>
+                    </div>                    
+                </div>
+                <div class="position-absolute" style="right: 300px; top: 100px;">
+                    <i class="fa-solid fa-ellipsis-vertical fs-1 text-primary cursor-pointer" id="edit-icon"></i>
+                    <div class="curd-display bg-white shadow position-absolute d-none" id="curd-edit">
+                        <li class="px-3 py-2  list-unstyled bg-info border-bottom ">Add Employee</li>
+                        <li class="px-3 py-2 list-unstyled bg-secondary text-light border-bottom ">Update</li>
+                        <li class="px-3 py-2 list-unstyled border-bottom bg-danger text-light ">Delete</li>
+                        <li class="px-3 py-2 list-unstyled bg-primary text-light text-center" id="crudCancel">Cancel</li>
+                    </div>        
                 </div>
             </div>
             <nav class="navbar-nav navbar-expand-sm navbar-light">
-                <div class="navbar-nav">
-                    
+                <div class="navbar-nav">                    
                         <a href="#" class="nav-link text-dark fw-bold bg-white "  onclick="view_data(event,'personal')">Personal</a>
                         <a href="#" class="nav-link  "  onclick="view_data(event,'company')">Company Information</a>                  
                         <a href="#" class="nav-link  "  onclick="view_data(event,'salary')">Salary</a>                                   
