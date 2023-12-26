@@ -44,7 +44,13 @@ a{
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
-
+.hover-shadow:hover{
+    box-shadow: 4px 0px 39px -2px rgba(0, 0, 0, 0.409);
+    -webkit-box-shadow: 4px 0px 39px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 0px 39px -2px rgba(0,0,0,0.75);
+    color: red !important;
+transition: .3s;
+}
 .slider-wrapper{
     margin-top: 10px;
     width: 100%;
@@ -53,8 +59,6 @@ a{
     color: white;
 }
 .msg-warper{
-    width: 100%;
-    height: 600px;
     background-image: url(../img/contact_us/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
