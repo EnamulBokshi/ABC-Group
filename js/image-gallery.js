@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
   //------ Slider Begin
 	const CaroS = document.querySelector('.Carousel-slider');
 	const CaroSlider = new MicroSlider(CaroS, { indicators: true, indicatorText: '' });
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.log(e.type + ' gesture detected');
 	});
 
-  let slideLink = document.querySelectorAll('.slider-item');
+  let slideLink = document.querySelectorAll('.slider-img');
   if (slideLink && slideLink !== null && slideLink.length > 0){
     slideLink.forEach( el => el.addEventListener('click', e => {
       e.preventDefault();
