@@ -6,14 +6,14 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-section.wrapper{
+/* section.wrapper{
     width: 80%;
     background: #f4f4f4;
     box-shadow: rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-}
+} */
 
-.name-group{
+/* .name-group{
     width: 100%;
 }
 .name-group label{
@@ -25,4 +25,4 @@ section.wrapper{
     width: 100%;
     display: block;
     padding: 10px 0px;
-}
+} */

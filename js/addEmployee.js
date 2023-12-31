@@ -1,1 +1,1 @@
-document.querySelector('#datepicker').addEventListener('click',datepicker())
+document.querySelector('#iqamaExpiryDate').addEventListener('click',datepicker())

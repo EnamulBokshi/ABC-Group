@@ -10,361 +10,654 @@
     <link rel="stylesheet" href="css/add-employee.css">
     <title>Add Employee</title>
 </head>
-<body>
-   <section class="wrapper container bg-light p-5">
+<body class="bg-light">
+  <section class="wrapper container-fluid bg-light p-5 pb-10">
     <div class="row mb-3">
         <div class="col">
             <h2 class="mb-0">New Employee Details</h2>
-            <p class="text-secondary">Please fill out your information below</p>
+            <p class="text-secondary">Please fill out all the required information below</p>
         </div>
         <hr class="my-4 text-black-50"/>
     </div>
-        <div class="clearfix">
-            <h3 class="">Personal information</h3>
-            <form action="#">
-                <div class="form-wrapper">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group mb-3">                                
-                                <input type="text" id="firstName" placeholder="First Name" class="form-control" required>
-                                <label for="firstName" class="text-secondary" >First Name</label>
-                            </div>  
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group mb-3">                                
-                                <input type="text" id="lastName" placeholder="Last Name Name" class="form-control" required>
-                                <label for="lastName" class="text-secondary" >Last Name</label>
-                            </div> 
-                        </div>  
-                    </div>
-                    <div class="row">
-                        <div class="col-6 mb-3">                           
-                            <div class="input-group date" id="datepicker">
-                                <input type="text" class="form-control" id="date" required>
-                                <span class="" style="cursor: pointer;">
-                                  <span class="input-group-text bg-light d-block">
-                                    <i class="fa fa-calendar"></i>
-                                  </span>
-                                </span>
-                              </div>
-                              <label for="date" class="text-black-50">Date Of Birth</label>
-                        </div>
-                        <div class="col-6 mb-3">                            
-                            <select name="sex" id="sex" class="form-select" aria-label="Default select example" required>
-                                <option value="">Select Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">female</option>
-                            </select>
-                            <label for="sex" class="text-black-50">Sex</label>
-                        </div>
-                    </div>
-                    <div class="row clearfix mt-5">
-                        <div class="col-12">
-                            <p class="h4">Address</p>
-                            <div class="col-12">
-                                <div class="from-group mb-3">                                   
-                                    <input type="text" class="form-control" id="street-address" required>
-                                    <label for="street-address" class="text-black-50">Street Address</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="from-group mb-3">                                    
-                                    <input type="text" class="form-control" id="address-line2" required>
-                                    <label for="address-line2" class="text-black-50">Street Address Line 2</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="from-group mb-3">                                 
-                                        <input type="text" class="form-control" id="city" required>
-                                        <label for="city" class="text-black-50">City</label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="from-group mb-3">
-                                        <input type="text" class="form-control" id="state" required>
-                                        <label for="state" class="text-black-50">State</label>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                            <div class="col-12">
-                                <div class="from-group mb-3">                                  
-                                    <input type="text" class="form-control" id="post" required>
-                                    <label for="post" class="text-black-50">Post Code</label>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="row clearfix mt-5">
-                        <div class="col-6">
-                            <div class="form-group mb-3">
-                                <label for="phone">Phone Number</label>
-                                <input type="text" class="form-control" id="phone" placeholder="(000) 000-0000" required>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group mb-3">
-                                <label for="email">E-mail</label>
-                                <input type="email" placeholder="someone@example.com" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group mb-3">
-                                <label for="ECN">Emergency Contact Name</label>
-                                <input type="text" name="ECN" id="ECN" class="form-control" required>
-
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group mb-3">
-                                <label for="SSN">SSN</label>
-                                <input type="text" name="SSN" id="SSN" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group mb-3">
-                                <label for="Veteran">
-                                    Veteran Status
-                                </label>
-                                <input type="text" name="" id="Veteran" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group mb-3">
-                                <label for="Disabilities">Disabilities</label>
-                                <input type="text" name="Disabilities" id="Disabilities" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row clearfix mt-4 ">
-                        <h3>Position Information</h3>
-                        <hr class="text-black-50 my-4"/>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="contactorName">Employer or Contractor Name</label>
-                                    <input type="text" name="contactorName" id="contactorName" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="positionTitle">Position Title</label>
-                                    <input type="text" class="form-control" id="positionTitle">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="reportsTo">reports To</label>
-                                    <input type="text" class="form-control" id="reportsTo">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <label for="employeeType">Employee Type</label>
-                                <select class="form-select" aria-label="Default select example" id="employeeType">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="row clearfix mt-3">
-                            <div class="col-6">
-                                <p class="mb-0">Usual Days of Employement</p>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="Saturday">
-                                    <label for="Saturday" class="form-check-label">Saturday</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="sunday">
-                                    <label for="sunday" class="form-check-label">Sunday</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="monday">
-                                    <label for="monday" class="form-check-label">Monday</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="tuesday">
-                                    <label for="tuesday" class="form-check-label">Tuesday</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="wednesday">
-                                    <label for="wednesday" class="form-check-label">Wednesday</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="thursday">
-                                    <label for="thursday" class="form-check-label">Thursday</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="friday">
-                                    <label for="friday" class="form-check-label">Friday</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix mt-4">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="startDate">Start Date</label>
-                                    <div class="input-group date" id="datepicker">
-                                        <input type="text" class="form-control" id="date"/>
-                                        <span class="" style="cursor: pointer;">
-                                          <span class="input-group-text bg-light d-block">
-                                            <i class="fa fa-calendar"></i>
-                                          </span>
-                                        </span>
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="startDate">Contract End Date (If applicable)</label>
-                                    <div class="input-group date" id="datepicker">
-                                        <input type="text" class="form-control" id="date"/>
-                                        <span class="" style="cursor: pointer;">
-                                          <span class="input-group-text bg-light d-block">
-                                            <i class="fa fa-calendar"></i>
-                                          </span>
-                                        </span>
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="clearfix">
+      <h3 class="">Personal information</h3>
+      <form action="#">
+        <div class="form-wrapper">
+<!-- Start of personal information collection -->
+          <div class="row">
+            <div class="col-4"> 
+              <label for="iqamaNumber" class="text-secondary" >IQAMA NUMBER</label><span style="color: red !important; display: inline; float: none;">*</span>
+              <div class="form-group mb-3">                                
+                  <input type="text" id="iqamaNumber" placeholder="ENTER IQAMA NUMBER" class="form-control" required>
+              </div>  
+            </div>
+            <div class="col-4">
+              <label for="name" class="text-secondary" >Name</label><span style="color: red !important; display: inline; float: none;">*</span>
+              <div class="form-group mb-3">                                
+                <input type="text" id="name" placeholder="Enter full name" class="form-control" required> 
+              </div>  
+            </div>
+            <div class="col-4">                        
+              <label for="designation" class="text-secondary" >Designation</label><span style="color: red !important; display: inline; float: none;">*</span>
+                <div class="form-group mb-3">                                
+                    <!-- <input type="text" id="" placeholder="Designation" class="form-control" required> -->
+                    <input type="text" class="form-control" placeholder="Enter designation" name="designation" id="designation" required >
+                </div> 
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <label for="date" class="text-black-50">IQAMA EXPIRY DATE</label> <span style="color: red !important; display: inline; float: none;">*</span>
+              <div class="input-group date" id="iqamaExpiryDate">
+                <input type="date" class="form-control" id="date" required>
+              </div>                                              
+            </div>
+            <div class="col-4">
+              <label for="country" class="text-secondary">NATIONALITY</label><span style="color: red !important; display: inline; float: none;">*</span>                  
+              <select id="country" name="country" class="form-select">
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Åland Islands">Åland Islands</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                  <option value="Anguilla">Anguilla</option>
+                  <option value="Antarctica">Antarctica</option>
+                  <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Aruba">Aruba</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Bahrain">Bahrain</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Barbados">Barbados</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Benin">Benin</option>
+                  <option value="Bermuda">Bermuda</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Bouvet Island">Bouvet Island</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                  <option value="Brunei Darussalam">Brunei Darussalam</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Cape Verde">Cape Verde</option>
+                  <option value="Cayman Islands">Cayman Islands</option>
+                  <option value="Central African Republic">Central African Republic</option>
+                  <option value="Chad">Chad</option>
+                  <option value="Chile">Chile</option>
+                  <option value="China">China</option>
+                  <option value="Christmas Island">Christmas Island</option>
+                  <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Comoros">Comoros</option>
+                  <option value="Congo">Congo</option>
+                  <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                  <option value="Cook Islands">Cook Islands</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Cote D'ivoire">Cote D'ivoire</option>
+                  <option value="Croatia">Croatia</option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Cyprus">Cyprus</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Djibouti">Djibouti</option>
+                  <option value="Dominica">Dominica</option>
+                  <option value="Dominican Republic">Dominican Republic</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Equatorial Guinea">Equatorial Guinea</option>
+                  <option value="Eritrea">Eritrea</option>
+                  <option value="Estonia">Estonia</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                  <option value="Faroe Islands">Faroe Islands</option>
+                  <option value="Fiji">Fiji</option>
+                  <option value="Finland">Finland</option>
+                  <option value="France">France</option>
+                  <option value="French Guiana">French Guiana</option>
+                  <option value="French Polynesia">French Polynesia</option>
+                  <option value="French Southern Territories">French Southern Territories</option>
+                  <option value="Gabon">Gabon</option>
+                  <option value="Gambia">Gambia</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Gibraltar">Gibraltar</option>
+                  <option value="Greece">Greece</option>
+                  <option value="Greenland">Greenland</option>
+                  <option value="Grenada">Grenada</option>
+                  <option value="Guadeloupe">Guadeloupe</option>
+                  <option value="Guam">Guam</option>
+                  <option value="Guatemala">Guatemala</option>
+                  <option value="Guernsey">Guernsey</option>
+                  <option value="Guinea">Guinea</option>
+                  <option value="Guinea-bissau">Guinea-bissau</option>
+                  <option value="Guyana">Guyana</option>
+                  <option value="Haiti">Haiti</option>
+                  <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                  <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="India">India</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Isle of Man">Isle of Man</option>
+                  <option value="Israel">Israel</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Jamaica">Jamaica</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Jersey">Jersey</option>
+                  <option value="Jordan">Jordan</option>
+                  <option value="Kazakhstan">Kazakhstan</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Kiribati">Kiribati</option>
+                  <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                  <option value="Korea, Republic of">Korea, Republic of</option>
+                  <option value="Kuwait">Kuwait</option>
+                  <option value="Kyrgyzstan">Kyrgyzstan</option>
+                  <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                  <option value="Latvia">Latvia</option>
+                  <option value="Lebanon">Lebanon</option>
+                  <option value="Lesotho">Lesotho</option>
+                  <option value="Liberia">Liberia</option>
+                  <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                  <option value="Liechtenstein">Liechtenstein</option>
+                  <option value="Lithuania">Lithuania</option>
+                  <option value="Luxembourg">Luxembourg</option>
+                  <option value="Macao">Macao</option>
+                  <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Malawi">Malawi</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="Mali">Mali</option>
+                  <option value="Malta">Malta</option>
+                  <option value="Marshall Islands">Marshall Islands</option>
+                  <option value="Martinique">Martinique</option>
+                  <option value="Mauritania">Mauritania</option>
+                  <option value="Mauritius">Mauritius</option>
+                  <option value="Mayotte">Mayotte</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                  <option value="Moldova, Republic of">Moldova, Republic of</option>
+                  <option value="Monaco">Monaco</option>
+                  <option value="Mongolia">Mongolia</option>
+                  <option value="Montenegro">Montenegro</option>
+                  <option value="Montserrat">Montserrat</option>
+                  <option value="Morocco">Morocco</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Myanmar">Myanmar</option>
+                  <option value="Namibia">Namibia</option>
+                  <option value="Nauru">Nauru</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Netherlands Antilles">Netherlands Antilles</option>
+                  <option value="New Caledonia">New Caledonia</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Nicaragua">Nicaragua</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Niue">Niue</option>
+                  <option value="Norfolk Island">Norfolk Island</option>
+                  <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Palau">Palau</option>
+                  <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                  <option value="Panama">Panama</option>
+                  <option value="Papua New Guinea">Papua New Guinea</option>
+                  <option value="Paraguay">Paraguay</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Philippines">Philippines</option>
+                  <option value="Pitcairn">Pitcairn</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="Qatar">Qatar</option>
+                  <option value="Reunion">Reunion</option>
+                  <option value="Romania">Romania</option>
+                  <option value="Russian Federation">Russian Federation</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="Saint Helena">Saint Helena</option>
+                  <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                  <option value="Saint Lucia">Saint Lucia</option>
+                  <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                  <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                  <option value="Samoa">Samoa</option>
+                  <option value="San Marino">San Marino</option>
+                  <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="Senegal">Senegal</option>
+                  <option value="Serbia">Serbia</option>
+                  <option value="Seychelles">Seychelles</option>
+                  <option value="Sierra Leone">Sierra Leone</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Slovakia">Slovakia</option>
+                  <option value="Slovenia">Slovenia</option>
+                  <option value="Solomon Islands">Solomon Islands</option>
+                  <option value="Somalia">Somalia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Suriname">Suriname</option>
+                  <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                  <option value="Swaziland">Swaziland</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                  <option value="Taiwan">Taiwan</option>
+                  <option value="Tajikistan">Tajikistan</option>
+                  <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Timor-leste">Timor-leste</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Tokelau">Tokelau</option>
+                  <option value="Tonga">Tonga</option>
+                  <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                  <option value="Tunisia">Tunisia</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Turkmenistan">Turkmenistan</option>
+                  <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                  <option value="Tuvalu">Tuvalu</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                  <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                  <option value="Uruguay">Uruguay</option>
+                  <option value="Uzbekistan">Uzbekistan</option>
+                  <option value="Vanuatu">Vanuatu</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Viet Nam">Viet Nam</option>
+                  <option value="Virgin Islands, British">Virgin Islands, British</option>
+                  <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                  <option value="Wallis and Futuna">Wallis and Futuna</option>
+                  <option value="Western Sahara">Western Sahara</option>
+                  <option value="Yemen">Yemen</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+              
+            </div>
+            <div class="col-4">
+              <label for="passport_no" class="text-secondary">Passport Number</label><span style="color: red !important; display: inline; float: none;">*</span>
+              <div class="input-group passport_no">
+                <input type="text" placeholder="Enter Passport Number" class="form-control" required>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+              <div class="col-4">
+                <label for="date" class="text-black-50">Passport Expiry Date</label><span style="color: red !important; display: inline; float: none;">*</span>                        
+                <div class="input-group date">
+                  <input type="date" class="form-control" id="passportExpiryDate" required>                                
+                </div>  
+              </div>
+              <div class="col-4">
+                  <label for="mobile" class="text-black-50">Mobile Number</label><span style="color: red !important; display: inline; float: none;">*</span>
+                  <div class="input-group">
+                    <input id="mobile" type="text" name="mobile" placeholder="Enter mobile number" class="form-control" required>
+                  </div>
+              </div>
+              <div class="col-4">
+                <label for="dob" class="text-secondary">Date of Birth</label><span style="color: red !important; display: inline; float: none;">*</span>
+                <div class="input-group">
+                  <input type="date" class="form-control" id="dob" name="dob" required>
                 </div>
-                <input type="submit" value="submit" class="btn btn-danger col-md-6">
-            </form>
-        </div>
-   </section>
-
-
-   <div class="container">
-    <form class="needs-validation" novalidate>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom01">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="First name"  required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom02">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"  required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustomUsername">Username</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
               </div>
-              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-              <div class="invalid-feedback">
-                Please choose a username.
+          </div>
+          <div class="row mt-3">
+            <div class="col-4">
+              <label for="blood" class="text-secondary">Blood Group (Optional)</label>
+              <div class="input-group">
+                <select name="blood" id="blood" class="form-select">
+                  <option value="A+">A+</option>
+                  <option value="B+">B+</option>
+                  <option value="AB+">AB+</option>
+                  <option value="O+">O+</option>
+                  <option value="A-">A-</option>
+                  <option value="B-">B-</option>
+                  <option value="O-">O-</option>                                                      
+                </select>
               </div>
             </div>
+            <div class="col-6">
+              <button class="btn form-control mt-4  btn-danger mt-2" type="submit">Submit</button>
+            </div>
+          </div>
+<!-- End of Personal Information Collection -->
+<!-- 
+                  <div class="row clearfix mt-5">
+                      <div class="col-12">
+                          <p class="h4">Address</p>
+                          <div class="col-12">
+                              <div class="from-group mb-3">                                   
+                                  <input type="text" class="form-control" id="street-address" required>
+                                  <label for="street-address" class="text-black-50">Street Address</label>
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <div class="from-group mb-3">                                    
+                                  <input type="text" class="form-control" id="address-line2" required>
+                                  <label for="address-line2" class="text-black-50">Street Address Line 2</label>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-6">
+                                  <div class="from-group mb-3">                                 
+                                      <input type="text" class="form-control" id="city" required>
+                                      <label for="city" class="text-black-50">City</label>
+                                  </div>
+                              </div>
+                              <div class="col-6">
+                                  <div class="from-group mb-3">
+                                      <input type="text" class="form-control" id="state" required>
+                                      <label for="state" class="text-black-50">State</label>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="col-12">
+                              <div class="from-group mb-3">                                  
+                                  <input type="text" class="form-control" id="post" required>
+                                  <label for="post" class="text-black-50">Post Code</label>
+                              </div>
+                          </div>
+                          
+                      </div>
+                  </div>
+                  <div class="row clearfix mt-5">
+                      <div class="col-6">
+                          <div class="form-group mb-3">
+                              <label for="phone">Phone Number</label>
+                              <input type="text" class="form-control" id="phone" placeholder="(000) 000-0000" required>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="form-group mb-3">
+                              <label for="email">E-mail</label>
+                              <input type="email" placeholder="someone@example.com" class="form-control" required>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="form-group mb-3">
+                              <label for="ECN">Emergency Contact Name</label>
+                              <input type="text" name="ECN" id="ECN" class="form-control" required>
+
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="form-group mb-3">
+                              <label for="SSN">SSN</label>
+                              <input type="text" name="SSN" id="SSN" class="form-control" required>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="form-group mb-3">
+                              <label for="Veteran">
+                                  Veteran Status
+                              </label>
+                              <input type="text" name="" id="Veteran" class="form-control">
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="form-group mb-3">
+                              <label for="Disabilities">Disabilities</label>
+                              <input type="text" name="Disabilities" id="Disabilities" class="form-control">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row clearfix mt-4 ">
+                      <h3>Position Information</h3>
+                      <hr class="text-black-50 my-4"/>
+                      <div class="row">
+                          <div class="col-6">
+                              <div class="form-group">
+                                  <label for="contactorName">Employer or Contractor Name</label>
+                                  <input type="text" name="contactorName" id="contactorName" class="form-control">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row clearfix">
+                          <div class="col-6">
+                              <div class="form-group">
+                                  <label for="positionTitle">Position Title</label>
+                                  <input type="text" class="form-control" id="positionTitle">
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group">
+                                  <label for="reportsTo">reports To</label>
+                                  <input type="text" class="form-control" id="reportsTo">
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <label for="employeeType">Employee Type</label>
+                              <select class="form-select" aria-label="Default select example" id="employeeType">
+                                  <option selected>Open this select menu</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                          </div>
+                      </div>
+                      <div class="row clearfix mt-3">
+                          <div class="col-6">
+                              <p class="mb-0">Usual Days of Employement</p>
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="Saturday">
+                                  <label for="Saturday" class="form-check-label">Saturday</label>
+                              </div>
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="sunday">
+                                  <label for="sunday" class="form-check-label">Sunday</label>
+                              </div>
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="monday">
+                                  <label for="monday" class="form-check-label">Monday</label>
+                              </div>
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="tuesday">
+                                  <label for="tuesday" class="form-check-label">Tuesday</label>
+                              </div>
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="wednesday">
+                                  <label for="wednesday" class="form-check-label">Wednesday</label>
+                              </div>
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="thursday">
+                                  <label for="thursday" class="form-check-label">Thursday</label>
+                              </div>
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="friday">
+                                  <label for="friday" class="form-check-label">Friday</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row clearfix mt-4">
+                          <div class="col-6">
+                              <div class="form-group">
+                                  <label for="startDate">Start Date</label>
+                                  <div class="input-group date" id="datepicker">
+                                      <input type="text" class="form-control" id="date"/>
+                                      <span class="" style="cursor: pointer;">
+                                        <span class="input-group-text bg-light d-block">
+                                          <i class="fa fa-calendar"></i>
+                                        </span>
+                                      </span>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group">
+                                  <label for="startDate">Contract End Date (If applicable)</label>
+                                  <div class="input-group date" id="datepicker">
+                                      <input type="text" class="form-control" id="date"/>
+                                      <span class="" style="cursor: pointer;">
+                                        <span class="input-group-text bg-light d-block">
+                                          <i class="fa fa-calendar"></i>
+                                        </span>
+                                      </span>
+                                    </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <input type="submit" value="submit" class="btn btn-danger col-md-6">
+          </form>
+      </div>
+  </section>
+
+
+  <div class="container">
+  <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom01">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="First name"  required>
+          <div class="valid-feedback">
+            Looks good!
           </div>
         </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationCustom03">City</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-              Please provide a valid city.
-            </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom02">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"  required>
+          <div class="valid-feedback">
+            Looks good!
           </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom04">State</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-            <div class="invalid-feedback">
-              Please provide a valid state.
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustomUsername">Username</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom05">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
             <div class="invalid-feedback">
-              Please provide a valid zip.
+              Please choose a username.
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">City</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </form>
-      
-   </div>
-   
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom04">State</label>
+          <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+          <div class="invalid-feedback">
+            Please provide a valid state.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+    
+  </div>
+  
 <section class=""></section>
 
 
-   <section class="container p-5 bg-light shadow">
-    <form>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationDefault01">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="First name"  required>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationDefault02">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"  required>
-          </div>
-        <div class="form-group col-md-4 mb-3">
-            <label for="email">
-                Email
-            </label>
-            <input type="text" class="form-control" id="email" placeholder="E-mail" required>
+  <section class="container p-5 bg-light shadow">
+  <form>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault01">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="First name"  required>
         </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationDefaultUsername">Username</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupPrepend2">@</span>
-              </div>
-              <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault02">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"  required>
+        </div>
+      <div class="form-group col-md-4 mb-3">
+          <label for="email">
+              Email
+          </label>
+          <input type="text" class="form-control" id="email" placeholder="E-mail" required>
+      </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationDefaultUsername">Username</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
             </div>
+            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
           </div>
         </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationDefault03">City</label>
-            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationDefault04">State</label>
-            <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationDefault05">Zip</label>
-            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
-          </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault03">City</label>
+          <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
         </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
-              Agree to terms and conditions
-            </label>
-          </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault04">State</label>
+          <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault05">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+          </label>
+        </div>
+      </div> -->
+        </div>
       </form>
-   </section>
+    </div>
+  </section>
    <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
@@ -389,6 +682,5 @@
     <script src="js/addEmployee.js"></script>
     <script src="https://kit.fontawesome.com/6e3dd6ef57.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
