@@ -55,7 +55,6 @@ transition: .3s;
     margin-top: 10px;
     width: 100%;
     height: 520px;
-    background: red;
     color: white;
 }
 .msg-warper{
@@ -74,3 +73,71 @@ transition: .3s;
     color: rgb(138, 138, 5);
     cursor: pointer;
 }
+
+
+section {
+    padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+}
+a, a:link, a:visited {
+    color: #212121;
+    text-decoration: none;
+}
+.Carousel-slider {
+    height: 560px;
+    position: relative;
+    width: 100%;
+}
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 0 50%;
+	perspective: 800px  !important;
+}
+
+.slider-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12);
+    display: none;
+    height: 320px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 320px;
+    cursor: pointer;
+}
+
+.indicators {
+	top: 0;
+    left: 50%;
+    padding: 0;
+    list-style-type: none;
+    margin: 40px 0 0 -77px;
+    position: absolute;
+}
+
+.indicators li {
+    color: #255f8b;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    text-align: center;
+    width: 16px;
+}
+
+.indicators li:last-child {margin: 0;}
+.indicators a {
+    background: #00416a;
+    border-radius: 8px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.indicators .active a {
+	background: #e4e5e6;
+
+}
+
